@@ -5,8 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'micromize',
-  tagline: 'A security hardening tool for containerized applications built with BPF LSM',
+  title: 'A security hardening tool for containerized applications built with BPF LSM',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -59,6 +58,7 @@ const config: Config = {
       logo: {
         alt: 'micromize',
         src: 'img/logo.svg',
+        srcDark: 'img/dark/logo.svg',
       },
       items: [
         {

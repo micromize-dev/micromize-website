@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -23,21 +23,23 @@ function HomepageHeader() {
 
 function WhyMicromize() {
   return (
-    <div className={clsx('container', styles.section)}>
-      <div className="row">
-        <div className="col col--8 col--offset-2">
-          <Heading as="h2" className="text--center margin-bottom--md">
-            Why Micromize?
-          </Heading>
-          <p>
-            Traditional container security often involves creating complex profiles (like Seccomp or SELinux) for each application to audit or restrict its capabilities. Micromize flips this model.
-          </p>
-          <p>
-            Instead of defining what each container can do, Micromize applies a broad set of sensible restrictions to all containers running on a node.
-          </p>
+    <section className={styles.whiteSection}>
+      <div className={clsx('container', styles.section)}>
+        <div className="row">
+          <div className="col col--8 col--offset-2">
+            <Heading as="h2" className={clsx('margin-bottom--md', styles.whyMicromizeTitle)}>
+              Why Micromize?
+            </Heading>
+            <p className={styles.whyMicromizeText}>
+              Traditional container security often involves creating complex profiles (like Seccomp or SELinux) for each application to audit or restrict its capabilities. Micromize flips this model.
+            </p>
+            <p className={styles.whyMicromizeText}>
+              Instead of defining what each container can do, Micromize applies a broad set of sensible restrictions to all containers running on a node.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

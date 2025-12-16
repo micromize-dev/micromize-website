@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'BPF LSM Powered',
-    Svg: require('../../../static/img/ebpf-icon.svg').default,
+    Svg: require('../../../static/img/bpf-lsm-icon.svg').default,
     description: (
       <>
         Leverages eBPF for high-performance, kernel-level enforcement.
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Modular Architecture',
-    Svg: require('../../../static/img/ig-logo.svg').default,
+    Svg: require('../../../static/img/modular-architecture.svg').default,
     description: (
       <>
         Built on top of <a href="https://github.com/inspektor-gadget/inspektor-gadget" target="_blank" rel="noopener noreferrer">Inspektor Gadget</a>.
@@ -43,8 +43,10 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       {Svg && (
-        <div className="text--center">
-          <Svg className={styles.featureSvg} role="img" />
+        <div className={styles.featureSvgWrapper}>
+          <div className={styles.featureSvgFrame}>
+            <Svg className={styles.featureSvg} role="img" />
+          </div>
         </div>
       )}
       <div className="text--center padding-horiz--md">

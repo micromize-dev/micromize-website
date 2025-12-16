@@ -4,8 +4,11 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-color-primary: #00b1d3;
   --ifm-color-primary-dark: #009fc0;
   --ifm-color-primary-darker: #0096b5;
@@ -31,11 +34,24 @@
 }
 
 .navbar__logo {
-  height: 80px;
+  width: 30.782px;
+  height: 32px;
 }
 
-body {
-  background-image: url('/img/snowflake-bg.svg');
-  background-repeat: repeat;
-  background-size: 100px 100px; /* Matches SVG size */
+.navbar__title {
+  display: none;
+}
+
+.navbar__brand::after {
+  content: "";
+  display: block;
+  width: 122px;
+  height: 20px;
+  background: url('/img/micromize-text.svg') no-repeat center;
+  margin-left: 12.8px;
+}
+
+.navbar {
+  background-color: transparent;
+  box-shadow: none;
 }
