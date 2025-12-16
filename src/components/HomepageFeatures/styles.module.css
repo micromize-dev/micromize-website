@@ -29,6 +29,13 @@
   height: 100%;
 }
 
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 64px 24px;
+    gap: 64px;
+  }
+}
+
 :global(html[data-theme='light']) .features {
   background: linear-gradient(274deg, #0B4955 -2.09%, #00687C 5.32%, #61959F 34.22%, #00B1D3 60.25%, #9FB9BE 93.86%);
   color: #FFF;

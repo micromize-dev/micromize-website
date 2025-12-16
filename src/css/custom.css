@@ -21,6 +21,40 @@
   --ifm-navbar-height: 100px;
 }
 
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-navbar-height: 60px;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+
+  .navbar__items {
+    display: flex;
+  }
+
+  .navbar__items--right {
+    display: flex !important; /* Force display of right items (GitHub, Color Mode) */
+  }
+
+  /* Force display of the color mode toggle and other items on mobile */
+  .navbar__items--right > * {
+    display: flex !important;
+  }
+
+  .navbar__brand {
+    margin-right: auto;
+  }
+
+  /* Adjust the brand text position/size for mobile if needed */
+  .navbar__brand::after {
+    margin-left: 8px;
+    width: 100px; /* Slightly smaller on mobile if needed */
+    background-size: contain;
+  }
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #00b1d3;
@@ -58,4 +92,45 @@
 .navbar {
   background-color: transparent;
   box-shadow: none;
+}
+
+.header-github-link {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url('/img/light/github-mark.svg') no-repeat center;
+  background-size: contain;
+  margin-right: 12px;
+}
+
+html[data-theme='dark'] .header-github-link {
+  background: url('/img/dark/github-mark-white.svg') no-repeat center;
+  background-size: contain;
+}
+
+/* Ensure the link doesn't have the external link icon if Docusaurus adds it */
+.header-github-link::after {
+  display: none !important;
+}
+
+/* Fix color mode toggle hover alignment */
+.navbar__items--right > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* Fix color mode toggle hover alignment */
+.navbar__items--right > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 50%;
 }

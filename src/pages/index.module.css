@@ -69,7 +69,26 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 120px 24px 64px 24px;
+    margin-top: -60px; /* Adjust for mobile navbar height if needed */
+  }
+
+  .heroTitle {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .whiteSection {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
+  .whyMicromizeTitle {
+    font-size: 28px;
+  }
+
+  .whyMicromizeText {
+    font-size: 16px;
   }
 }
 
