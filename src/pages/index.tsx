@@ -48,7 +48,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Micromize - Harden containers made easy">
+      description="Micromize is a security hardening tool for containerized applications built with BPF LSM.">
       <HomepageHeader />
       <main>
         <WhyMicromize />
