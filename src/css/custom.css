@@ -82,11 +82,13 @@
   width: 122px;
   height: 20px;
   background: url('/img/light/micromize-text.svg') no-repeat center;
+  background-size: contain;
   margin-left: 12.8px;
 }
 
 [data-theme='dark'] .navbar__brand::after {
   background: url('/img/micromize-text.svg') no-repeat center;
+  background-size: contain;
 }
 
 .navbar {
@@ -111,17 +113,6 @@ html[data-theme='dark'] .header-github-link {
 /* Ensure the link doesn't have the external link icon if Docusaurus adds it */
 .header-github-link::after {
   display: none !important;
-}
-
-/* Fix color mode toggle hover alignment */
-.navbar__items--right > button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  padding: 0;
-  border-radius: 50%;
 }
 
 /* Fix color mode toggle hover alignment */
