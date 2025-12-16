@@ -57,7 +57,7 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'micromize',
-        src: 'img/logo.svg',
+        src: 'img/light/logo.svg',
         srcDark: 'img/dark/logo.svg',
       },
       items: [

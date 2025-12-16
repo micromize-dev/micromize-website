@@ -82,3 +82,19 @@
   align-items: center;
   justify-content: center;
 }
+
+:global(html[data-theme='light']) .heroBanner {
+  background: linear-gradient(268deg, #9FB9BE 6.51%, #00B1D3 40.33%, #61959F 66.52%, #00687C 92.72%, #0B4955 103.06%);
+}
+
+:global(html[data-theme='light']) .whiteSection {
+  background-color: white;
+}
+
+:global(html[data-theme='light']) .whyMicromizeTitle {
+  color: #013D49;
+}
+
+:global(html[data-theme='light']) .whyMicromizeText {
+  color: rgba(1, 61, 73, 0.7);
+}
