@@ -38,9 +38,13 @@
 
 :global(html[data-theme='light']) .features {
   background: linear-gradient(274deg, #0B4955 -2.09%, #00687C 5.32%, #61959F 34.22%, #00B1D3 60.25%, #9FB9BE 93.86%);
-  color: #FFF;
+  color: #000;
 }
 
 :global(html[data-theme='light']) .features h3 {
-  color: #FFF;
+  color: #000;
+}
+
+:global(html[data-theme='light']) .featureSvg {
+  filter: brightness(0);
 }

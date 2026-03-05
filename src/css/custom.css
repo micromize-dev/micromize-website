@@ -91,6 +91,14 @@
   background-size: contain;
 }
 
+html[data-theme='light'] .navbar__logo {
+  filter: brightness(0);
+}
+
+html[data-theme='light'] .navbar__brand::after {
+  filter: brightness(0);
+}
+
 .navbar {
   background-color: transparent;
   box-shadow: none;

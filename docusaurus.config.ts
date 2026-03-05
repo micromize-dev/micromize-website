@@ -5,7 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'A security hardening tool for containerized applications built with BPF LSM',
+  title: 'Micromize',
+  tagline: 'Kernel-enforced boundary hardening for cloud-native containers',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
